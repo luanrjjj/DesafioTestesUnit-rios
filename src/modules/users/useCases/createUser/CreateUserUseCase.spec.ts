@@ -11,7 +11,7 @@ let createUser:CreateUserUseCase
 describe('CreateUser',()=> {
     beforeEach(()=>{
         inMemoryUsersRepository = new InMemoryUsersRepository()
-        usersRepository = new UsersRepository()
+        
         createUser= new CreateUserUseCase(inMemoryUsersRepository)
         
     })
